@@ -3,7 +3,7 @@ Kubernetes deployment (5p)
 a) Create a k8s cluster using Amazon Elastic Kubernetes Service (EKS)
 \
 · You can also use minikube, kind, or any other Kubernetes distribution, or existing cluster.\
-· Minikube, by default, uses its own internal Docker daemon. This daemon doesn’t know anything about images built previously. Prepare your environment by directing it to access the internal docker daemon by using the $(minikube docker-env) command and rebuild your images. This way images will be available within the k8s cluster. (https://medium.com/bb-tutorials-and-thoughts/how-to-use-own-local-doker-images-with-minikube-2c1ed0b0968) 
+· Minikube, by default, uses its own internal Docker daemon. This daemon doesn’t know anything about images built previously. Prepare your environment by directing it to access the internal docker daemon by using the $(minikube docker-env) command and rebuild your images. This way images will be available within the k8s cluster. (https://medium.com/bb-tutorials-and-thoughts/how-to-use-own-local-doker-images-with-minikube-2c1ed0b0968) \
 \
 b) Using Helm, install an NFS server and provisioner in the cluster.
 
