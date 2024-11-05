@@ -1,3 +1,15 @@
+Creation of EKS cluster:
+1. Enter AWS Management Console
+2. Create Role for EKS if not exists
+3. Add AmazonEKSClusterPolicy policy
+4. Create EKS Cluster
+5. Choose role mentioned in point 2
+6. Default setting should work fine for the rest of the options
+7. Go to Compute tab
+8. Create a new node group with the configuration that suits you
+9. Use role with AmazonEKSWorkerNodePolicy, AmazonEC2ContainerRegistryReadOnly polices
+10. Then move to the installation below
+
 Installation of kubectl and configuration:
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
